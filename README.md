@@ -1,4 +1,3 @@
-"# clappr-dynamic-text-overlay" 
 ###EXAMPLE
 <img src="https://github.com/Lethea/clappr-dynamic-text-overlay/blob/master/clapr.png?raw=true">
 ```html
