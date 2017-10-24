@@ -1,0 +1,67 @@
+<html>
+<meta charset="utf-8">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+  <script type="text/javascript" src="plugin.min.js"></script>
+  <script type="text/javascript"
+        src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+<link href="plugin.css"  rel="stylesheet" />
+</head>
+
+<body>
+  <div id="player-wrapper" style="width:848px;height:480px"></div>
+  <!--<img src="http://192.168.1.3:1935/protect/_definst_/smil:test.smil/image.gif">-->
+  <script>
+ 
+  
+    $(document).ready(function() {
+
+        var source = 'http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8';
+        var player = new Clappr.Player({
+            source:source,
+            parentId: "#player-wrapper",
+            autoPlay: true,
+			emrePluginConfig:{
+				textContent:"EMRE KARATAŞOĞLU ID NUMBER"
+			},
+            actualLiveTime: false,
+            poster: 'http://www.kingglitter.com/wp-content/uploads/2015/10/request-a-sample-547-p-600x600.jpg',
+            strings: {
+                'tr-TR': {
+                    'live': 'CANLI',
+                    'back_to_live': 'CANLI YAYINA GERİ DÖN',
+                    'playback_not_supported': 'Tarayıcınız bu ortamı oynatamıyor. Lütfen farklı bir tarayıcı ile tekrar deneyin'
+                }
+            },
+			plugins: [HelloWorld,LevelSelector],
+            language: 'tr-TR',
+            mediacontrol: {
+                buttons: "#fff",
+                seekbar: "#fff",
+            },
+            watermark: 'http://letheasoftware.com/wp-content/uploads/2014/06/1111.png',
+            watermarkLink: 'http://emrekaratasoglu.com',
+            position: 'top-right',
+            width: "100%",
+            height: '100%',
+            events: {
+                onPlay: function() {
+                 
+                },
+				onPause:function(){
+				
+					$(".play-wrapper").show().css("display","block !important");
+				
+				},
+                onEnded: function() {
+                    
+                }
+            }
+        });
+    });
+	
+	
+  </script>
+</body>
+</html>
