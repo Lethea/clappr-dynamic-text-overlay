@@ -1,4 +1,4 @@
-###EXAMPLE
+## EXAMPLE
 <img src="https://github.com/Lethea/clappr-dynamic-text-overlay/blob/master/clapr.png?raw=true">
 ```html
  $(document).ready(function() {
@@ -51,7 +51,7 @@
 
 ```
 
-###SCRIPTS & PLUGIN
+## SCRIPTS & PLUGIN
 
 emrePluginConfig:{
 				textContent:"EMRE KARATAŞOĞLU ID NUMBER"
