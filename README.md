@@ -53,6 +53,7 @@
 
 ## SCRIPTS & PLUGIN
 
-emrePluginConfig:{
-				textContent:"EMRE KARATAŞOĞLU ID NUMBER"
+             emrePluginConfig:{
+				textContent:"EMRE KARATAŞOĞLU ID NUMBER",
+				changeDuration:2000
 			},
