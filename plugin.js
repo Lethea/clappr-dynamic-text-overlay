@@ -18,8 +18,8 @@
   };
 
 
-  var HelloWorld = Clappr.UIContainerPlugin.extend({
-        name: 'hello_world',
+  var OverlayPlugin = Clappr.UIContainerPlugin.extend({
+        name: 'overlay_plugin',
         initialize: function() {
           this.render();
         },

@@ -21,7 +21,7 @@
                     'playback_not_supported': 'Tarayıcınız bu ortamı oynatamıyor. Lütfen farklı bir tarayıcı ile tekrar deneyin'
                 }
             },
-			plugins: [HelloWorld,LevelSelector],
+			plugins: [OverlayPlugin,LevelSelector],
             language: 'tr-TR',
             mediacontrol: {
                 buttons: "#fff",
