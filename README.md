@@ -9,7 +9,8 @@
             parentId: "#player-wrapper",
             autoPlay: true,
 			emrePluginConfig:{
-				textContent:"EMRE KARATAŞOĞLU ID NUMBER"
+				textContent:"EMRE KARATAŞOĞLU ID NUMBER",
+				changeDuration:2000
 			},
             actualLiveTime: false,
             poster: 'http://www.kingglitter.com/wp-content/uploads/2015/10/request-a-sample-547-p-600x600.jpg',
